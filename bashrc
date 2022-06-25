@@ -32,6 +32,7 @@ alias df="df -h"           # -h prints human readable forma
 alias install="sudo pacman -S"
 
 alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory thermal"
+alias excel="et"
 
 PS1='[\u@\h \W]\$ '
 #export PATH=$PATH:/home/hacksang/.local/bin
