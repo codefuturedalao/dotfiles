@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias ll="ls -al"
+alias l="ls -al"
 alias px="proxychains"
 alias gc="google-chrome-stable"
 alias nt='notion-app --proxy-server="socks5://127.0.0.1:1080"'
@@ -33,8 +34,9 @@ alias install="sudo pacman -S"
 
 alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory thermal"
 alias excel="et"
+alias jc="javac"
 
-PS1='[\u@\h \W]\$ '
+PS1='\[\033[01;32m\][\u@\h \[\033[01;34m\]\W]\[\033[00m\]\$ '
 #export PATH=$PATH:/home/hacksang/.local/bin
 
 
@@ -43,6 +45,13 @@ export https=http://127.0.0.1:8000
 
 export http_proxy=socks5://127.0.0.1:1080
 export https_proxy=socks5://127.0.0.1:1080
+
+export ALL_PROXY=socks5://127.0.0.1:1080
+
+export CLASSPATH=/home/hacksang:./
+export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
+
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 source /home/hacksang/.config/broot/launcher/bash/br
 source /etc/profile.d/autojump.sh
