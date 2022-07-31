@@ -12,8 +12,8 @@ alias px="proxychains"
 alias gc="google-chrome-stable"
 alias nt='notion-app --proxy-server="socks5://127.0.0.1:1080"'
 alias camera='kamoso'
-alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
 alias cl='clear'
+alias rm='rm -i'
 # Save a lot of typing for common commands
 alias gs="git status"
 alias gc="git commit"
@@ -32,7 +32,8 @@ alias mkdir="mkdir -p"     # -p make parent dirs as needed
 alias df="df -h"           # -h prints human readable forma
 alias install="sudo pacman -S"
 
-alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory thermal"
+alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
+alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory"
 alias excel="et"
 alias jc="javac"
 
