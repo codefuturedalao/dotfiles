@@ -22,6 +22,9 @@ alias v="vim"
 alias u="cd ../"
 alias b="cd -"
 alias r="ranger"
+alias wget="unset http_proxy; tsocks wget"
+alias trans="unset http_proxy; tsocks trans"
+alias updb="source ~/.bashrc"
 
 # Save you from mistyping
 alias sl=ls
@@ -33,7 +36,7 @@ alias df="df -h"           # -h prints human readable forma
 alias install="sudo pacman -S"
 
 alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
-alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory"
+alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory workq"
 alias excel="et"
 alias jc="javac"
 
