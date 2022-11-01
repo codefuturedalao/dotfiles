@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias sl='ls --color=auto'
 alias ls='ls --color=auto'
 alias ll="ls -al"
 alias l="ls -al"
@@ -22,9 +23,10 @@ alias v="vim"
 alias u="cd ../"
 alias b="cd -"
 alias r="ranger"
-alias wget="unset http_proxy; tsocks wget"
-alias trans="unset http_proxy; tsocks trans"
+alias wget="unset http_proxy; unset https_proxy; tsocks wget"
+alias trans="unset http_proxy; unset https_proxy; tsocks trans"
 alias updb="source ~/.bashrc"
+alias news="export BROWSER=google-chrome-stable; newsboat -r"
 
 # Save you from mistyping
 alias sl=ls
@@ -35,10 +37,14 @@ alias mkdir="mkdir -p"     # -p make parent dirs as needed
 alias df="df -h"           # -h prints human readable forma
 alias install="sudo pacman -S"
 
-alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
-alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory workq"
 alias excel="et"
 alias jc="javac"
+
+# Android related commands
+alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
+alias systm="syst gfx input view webview wm am sm audio video hal res rs power ss sched freq idle disk memory workq"
+alias ad='adb devices'
+alias as='adb shell'
 
 PS1='\[\033[01;32m\][\u@\h \[\033[01;34m\]\W]\[\033[00m\]\$ '
 #export PATH=$PATH:/home/hacksang/.local/bin
