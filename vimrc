@@ -57,6 +57,7 @@ set shortmess+=I
 set number
 
 set noexpandtab
+set tabstop=4
 " This enables relative line numbering mode. With both number and
 " relativenumber enabled, the current line shows the true line number, while
 " all other lines (above and below) are numbered relative to the current line.
