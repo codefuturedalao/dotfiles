@@ -20,5 +20,5 @@ rcup
 
 ```
 git clone
-rcup
+rcup -d [path]
 ```
