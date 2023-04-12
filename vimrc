@@ -23,6 +23,8 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'dyng/ctrlsf.vim'
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
