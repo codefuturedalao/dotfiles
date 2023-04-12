@@ -136,7 +136,7 @@ alias df="df -h"           # -h prints human readable forma
 alias install="sudo pacman -S"
 
 alias excel="et"
-alias jc="javac"
+#alias jc="javac"
 
 # Android related commands
 alias syst='python2 /home/hacksang/Downloads/PaperExperiment/getPower/gettrace/sdk/platform-tools/systrace/systrace.py'
