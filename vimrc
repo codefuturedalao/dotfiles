@@ -133,7 +133,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l 
 inoremap jk <ESC>
 " Setting for NERDTree 
-nnoremap jf :NERDTreeFocus<CR>
+nnoremap <F2> :NERDTreeFocus<CR>
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Close the tab if NERDTree is the only window remaining in it.
@@ -144,7 +144,7 @@ autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTa
 " Setting for NERDTree 
 let g:AutoPairsShortcutToggle = '<C-P>'
 " Setting for Tagbar
-nnoremap jt :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 " (Ctrl+F) Open search prompt (Normal Mode)
 nmap <C-F>f <Plug>CtrlSFPrompt 
