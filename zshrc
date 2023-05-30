@@ -125,6 +125,7 @@ alias wget="unset http_proxy; unset https_proxy; tsocks wget"
 alias trans="unset http_proxy; unset https_proxy; tsocks trans"
 alias updb="source ~/.bashrc"
 alias news="export BROWSER=google-chrome-stable; newsboat -r"
+alias lg="lazygit"
 
 # Save you from mistyping
 alias sl=ls
@@ -145,7 +146,7 @@ alias ad='adb devices'
 alias as='adb shell'
 
 #PS1='\[\033[01;32m\][\u@\h \[\033[01;34m\]\W]\[\033[00m\]\$ '
-#export PATH=$PATH:/home/hacksang/.local/bin
+export PATH=$PATH:/home/hacksang/.local/bin
 export PATH=/usr/lib/ccache:$PATH
 
 
@@ -176,8 +177,10 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
 	GIT_PROMPT_ONLY_IN_REPO=1
         source $HOME/.bash-git-prompt/gitprompt.sh
 fi
-export NEMU_HOME=/home/hacksang/Documents/ics2022/ics2022/nemu
-export AM_HOME=/home/hacksang/Documents/ics2022/ics2022/abstract-machine
+#export NEMU_HOME=/home/hacksang/Documents/ics2022/ics2022/nemu
+#export AM_HOME=/home/hacksang/Documents/ics2022/ics2022/abstract-machine
+export NEMU_HOME=/home/hacksang/Documents/study_root_repo/Comp_Arch/nju_ics/ics2022/nemu
+export AM_HOME=/home/hacksang/Documents/study_root_repo/Comp_Arch/nju_ics/ics2022/abstract-machine
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -194,5 +197,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export FONTCONFIG_FILE=$CONFDA_PREFIX/etc/fonts/fonts.conf
-export FONTCONFIG_PATH=$CONFDA_PREFIX/etc/fonts/
+
+eval "$(atuin init zsh)"
+eval "$(atuin init zsh)"
+
+eval $(thefuck --alias)
