@@ -163,7 +163,11 @@ export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 #source /home/hacksang/.config/broot/launcher/bash/br
-source /etc/profile.d/autojump.sh
+#source /etc/profile.d/autojump.sh
+#[[ -s /home/hacksang/.autojump/etc/profile.d/autojump.sh ]] && source /home/hacksang/.autojump/etc/profile.d/autojump.sh
+#autoload -U compinit && compinit -u
+
+
 
 
 
@@ -190,3 +194,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export FONTCONFIG_FILE=$CONFDA_PREFIX/etc/fonts/fonts.conf
+export FONTCONFIG_PATH=$CONFDA_PREFIX/etc/fonts/
