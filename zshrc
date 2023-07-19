@@ -202,3 +202,4 @@ eval "$(atuin init zsh)"
 eval "$(atuin init zsh)"
 
 eval $(thefuck --alias)
+setopt no_nomatch
