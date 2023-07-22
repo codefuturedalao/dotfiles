@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -184,14 +191,14 @@ export AM_HOME=/home/hacksang/Documents/study_root_repo/Comp_Arch/nju_ics/ics202
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/hacksang/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/hacksang/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/hacksang/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/etc/profile.d/conda.sh" ]; then
+        . "/usr/etc/profile.d/conda.sh"
     else
-        export PATH="/home/hacksang/anaconda3/bin:$PATH"
+        export PATH="/usr/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -202,4 +209,31 @@ eval "$(atuin init zsh)"
 eval "$(atuin init zsh)"
 
 eval $(thefuck --alias)
+
+eval "$(atuin init zsh)"
+
+
 setopt no_nomatch
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [ "$TERM" = "linux"  ]; then
+	echo -en "\e]P01F2229" #black
+	echo -en "\e]P88C42AB" #darkgrey
+	echo -en "\e]P1D41919" #darkred
+	echo -en "\e]P9EC0101" #red
+	echo -en "\e]P25EBDAB" #darkgreen
+	echo -en "\e]PA47D4B9" #green
+	echo -en "\e]P3FEA44C" #brown
+	echo -en "\e]PBFF8A18" #yellow
+	echo -en "\e]P4367bf0" #darkblue
+	echo -en "\e]PC277FFF" #blue
+	echo -en "\e]P5BF2E5D" #darkmagenta
+	echo -en "\e]PDD71655" #magenta
+	echo -en "\e]P649AEE6" #darkcyan
+	echo -en "\e]PE05A1F7" #cyan
+	echo -en "\e]P7E6E6E6" #lightgrey
+	echo -en "\e]PFFFFFFF" #white
+fi
