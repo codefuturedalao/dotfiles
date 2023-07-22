@@ -130,7 +130,7 @@ alias b="cd -"
 alias r="ranger"
 alias wget="unset http_proxy; unset https_proxy; tsocks wget"
 alias trans="unset http_proxy; unset https_proxy; tsocks trans"
-alias updb="source ~/.bashrc"
+alias updb="source ~/.zshrc"
 alias news="export BROWSER=google-chrome-stable; newsboat -r"
 alias lg="lazygit"
 
