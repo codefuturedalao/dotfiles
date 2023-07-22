@@ -171,9 +171,7 @@ export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 #source /home/hacksang/.config/broot/launcher/bash/br
-#source /etc/profile.d/autojump.sh
-#[[ -s /home/hacksang/.autojump/etc/profile.d/autojump.sh ]] && source /home/hacksang/.autojump/etc/profile.d/autojump.sh
-#autoload -U compinit && compinit -u
+autoload -U compinit && compinit -u
 
 
 
@@ -237,3 +235,4 @@ if [ "$TERM" = "linux"  ]; then
 	echo -en "\e]P7E6E6E6" #lightgrey
 	echo -en "\e]PFFFFFFF" #white
 fi
+eval "$(zoxide init zsh --cmd j)"
