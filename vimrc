@@ -11,6 +11,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'KabbAmine/yowish.vim'
+
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'sheerun/vim-polyglot'
@@ -23,8 +25,10 @@ Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'dyng/ctrlsf.vim'
 
+
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -181,3 +185,7 @@ let g:ctrlsf_position = 'right'
 let g:ctrlsf_winsize = '46'
 " " Search from the current working directory
 let g:ctrlsf_default_root = 'cwd'"
+
+set background=dark
+colorscheme yowish
+highlight LineNr ctermfg=lightRed
